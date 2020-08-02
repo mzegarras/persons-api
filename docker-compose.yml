@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  persons:
+    image: mzegarra/persons:0.0.1
+    build:
+      context: .
+      dockerfile: ./src/main/docker/Dockerfile
+    ports:
+      - 8080:8080
